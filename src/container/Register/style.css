@@ -1,0 +1,25 @@
+.registerContainer .form-label {
+  font-weight: 500;
+}
+.registerContainer {
+  border: none;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 20px;
+}
+
+.registerContainer .form-control {
+  border-radius: 0.5rem;
+}
+
+.registerContainer .btn {
+  background-color: #0d84fd;
+  border: #0d84fd;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin-top: 15px;
+}
+
+.formFooter {
+  text-align: center;
+}

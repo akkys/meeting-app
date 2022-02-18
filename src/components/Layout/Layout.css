@@ -1,0 +1,23 @@
+.sidebar {
+  position: fixed;
+  overflow: auto;
+  background-color: #fff;
+  color: rgb(83, 83, 83);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 87vh;
+}
+
+.sidebar label {
+  margin-left: 5px;
+}
+
+.offcanvas-body {
+  padding: 0%;
+  max-width: 18%;
+}
+.offcanvas-start {
+  width: 250px;
+  border-right: none;
+}

@@ -1,0 +1,31 @@
+.nav-link {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.navbar a {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.navbar .btn {
+  font-weight: 500;
+  padding: 0 1rem;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.sidebar-menu-icon {
+  display: none;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 35px;
+  color: rgb(83, 83, 83);
+}
+
+@media (max-width: 859px) {
+  .sidebar-menu-icon {
+    display: block;
+  }
+}

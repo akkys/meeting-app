@@ -1,62 +1,49 @@
 import React from "react";
-import "./style.css";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import InputField from "../../components/UI/InputField";
-import { IoMdArrowRoundBack } from "react-icons/io";
+import ModalForm from "../../components/UI/ModalForm";
+import avatar from "../../image/avatar.jpg";
 
-const RegisterPage = () => {
+const RegisterPage = ({ registerModal, closeRegModal, showLoginModal }) => {
   return (
-    <Container className="mt-5">
-      <Row>
-        <Col
-          xs={{ span: 10, offset: 1 }}
-          sm={{ span: 8, offset: 2 }}
-          md={{ span: 6, offset: 3 }}
-          lg={{ span: 4, offset: 4 }}
-          className="registerContainer"
-        >
-          <Form>
-            <h4>
-              Sign up{" "}
-              <Link to="/">
-                <IoMdArrowRoundBack style={{ float: "right" }} />
-              </Link>
-            </h4>
+    <ModalForm
+      show={registerModal}
+      handleClose={closeRegModal}
+      size="sm"
+      // handleSubmit={}
+      modalTitle="Sign up"
+    >
+      <img src={avatar} alt="avatar" />
+      <InputField
+        inputType="input"
+        type="text"
+        label="Name"
+        placeholder="Name"
+      />
+      <InputField
+        inputType="input"
+        type="email"
+        label="Email"
+        placeholder="name@example.com"
+      />
+      <InputField
+        inputType="input"
+        type="password"
+        label="Password"
+        placeholder="at least 8 character"
+      />
+      <div className="d-grid gap-2">
+        <Button variant="primary">Sign up</Button>
+      </div>
+      <hr />
+      <div className="modalFooter">
+        <p className="m-auto text-secondary">Alredy have an account?</p>
 
-            <hr />
-            <InputField
-              inputType="input"
-              type="text"
-              label="Name"
-              placeholder="Name"
-            />
-            <InputField
-              inputType="input"
-              type="email"
-              label="Email"
-              placeholder="name@example.com"
-            />
-            <InputField
-              inputType="input"
-              type="password"
-              label="Password"
-              placeholder="at least 8 character"
-            />
-            <div className="d-grid gap-2">
-              <Button variant="primary">Sign up</Button>
-            </div>
-            <hr />
-            <div className="formFooter">
-              <p className="m-auto text-secondary">Alredy have an account?</p>
-              <Link to="/login" style={{ fontWeight: "500" }}>
-                Log in
-              </Link>
-            </div>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+        <span className="text-primary" onClick={showLoginModal}>
+          Login
+        </span>
+      </div>
+    </ModalForm>
   );
 };
 

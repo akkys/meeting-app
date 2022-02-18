@@ -1,0 +1,22 @@
+.sidebar-top {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 2rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebar-container label {
+  margin-left: 5px;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 2rem;
+  font-size: 15px;
+  font-weight: 500;
+}

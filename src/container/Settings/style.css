@@ -1,0 +1,44 @@
+.setting-container {
+  display: flex;
+  width: 82%;
+  margin-left: 18%;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.sidebar-container {
+  position: fixed;
+  overflow: auto;
+  background-color: #fff;
+  color: rgb(83, 83, 83);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 88vh;
+}
+
+@media (max-width: 1115px) {
+  .sidebar-container {
+    width: 18%;
+  }
+  .setting-container {
+    margin-left: 18%;
+  }
+}
+@media (max-width: 992px) {
+  .sidebar-container {
+    width: 19%;
+  }
+  .setting-container {
+    margin-left: 18%;
+  }
+}
+@media (max-width: 859px) {
+  .sidebar-container {
+    display: none;
+  }
+  .setting-container {
+    width: 100%;
+    margin-left: auto;
+  }
+}

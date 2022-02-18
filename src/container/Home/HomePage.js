@@ -1,18 +1,8 @@
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react";
+import Layout from "../../components/Layout/Layout";
 
 const HomePage = () => {
-  return (
-    <>
-      <Link to="/register">
-        <Button className="btn btn-primary m-2">Sign up</Button>
-      </Link>
-      <Link to="/login">
-        <Button className="btn btn-primary">Login</Button>
-      </Link>
-    </>
-  );
+  return <Layout>Welcome to Meets</Layout>;
 };
 
 export default HomePage;
